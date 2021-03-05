@@ -15,13 +15,13 @@
 # 
 # Instructions: 
 #	Copy/Paste the line below into PowerShell for default settings (Toggle Enable/Disable)
-#		iex ((New-Object System.Net.WebClient).DownloadString(''))
+#		iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/awurthmann/Set-RDP-Connection/main/Set-RDP-Connection.ps1'))
 #	or Download script:
 #		Running from a Run or cmd.exe prompt: powershell -ExecutionPolicy Bypass -File ".\Set-RDP-Connection.ps1"
 #	OR to change the default arguments
-#		$installScript=((New-Object System.Net.WebClient).DownloadString(''))
+#		$installScript=((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/awurthmann/Set-RDP-Connection/main/Set-RDP-Connection.ps1'))
 #		$ScriptBlock = [System.Management.Automation.ScriptBlock]::Create($installScript)
-#		$ScriptArgs=@($False,$True")
+#		$ScriptArgs=@($False,$True)
 #		Invoke-Command $ScriptBlock -ArgumentList $ScriptArgs
 #	or Download script:
 #		Running from a PowerShell prompt: Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
