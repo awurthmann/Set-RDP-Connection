@@ -11,8 +11,7 @@ Copy/Paste the line below into PowerShell for default settings (Toggle Enable/Di
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/awurthmann/Set-RDP-Connection/main/Set-RDP-Connection.ps1'))
 ```
-or Download script:
-Running from a Run or cmd.exe prompt:
+or Download script and execute from a Run or cmd.exe prompt:
 ```powershell
 powershell -ExecutionPolicy Bypass -File ".\Set-RDP-Connection.ps1"
 ```
