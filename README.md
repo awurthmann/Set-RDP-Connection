@@ -23,8 +23,7 @@ $ScriptBlock = [System.Management.Automation.ScriptBlock]::Create($installScript
 $ScriptArgs=@($False,$True)
 Invoke-Command $ScriptBlock -ArgumentList $ScriptArgs
 ```
-or Download script:
-Running from a PowerShell prompt: 
+or Download script and while running from a PowerShell prompt: 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 .\Install-NetskopeClient-IDP.ps1 -Toggle $False -Enable $False
