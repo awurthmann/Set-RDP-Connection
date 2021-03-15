@@ -48,6 +48,9 @@ function isAdmin {
 function Enable-RDP {
 	Set-ItemProperty -Path "HKLM:SYSTEM\CurrentControlSet\Control\Terminal Server" -Name fDenyTSConnections -Value 0
 	Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+	
+	[string]$netProfile=(Get-NetConnectionProfile).NetworkCategory
+	If ($netProfile) {Set-NetFirewallProfile -Name $netProfile -AllowInboundRules True}
 }
 
 function Disable-RDP {
