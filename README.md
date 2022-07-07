@@ -25,5 +25,5 @@ Invoke-Command $ScriptBlock -ArgumentList $ScriptArgs
 or Download script and while running from a PowerShell prompt: 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
-.\Install-NetskopeClient-IDP.ps1 -Toggle $False -Enable $False
+.\Set-RDP-Connection.ps1 -Toggle $False -Enable $False
 ```
